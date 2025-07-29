@@ -6,7 +6,7 @@ function Support() {
   return (
     <div className="w-full md:w-5/6 mx-auto mt-10">
       <h1 className="text-2xl sm:text-3xl text-blue-500 font-bold mb-6">Contact Us</h1>
-      <div className="bg-white w-full flex flex-col p-4 sm:p-6 md:p-10 rounded-lg shadow-md gap-6">
+      <div className="bg-white w-full flex flex-col p-4 sm:p-6 md:p-10 gap-6">
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex justify-center items-center lg:w-1/2">
             <img src="/support_asset.png" alt="support" className="w-full max-w-xs sm:max-w-md object-contain" />

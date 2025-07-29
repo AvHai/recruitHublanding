@@ -4,7 +4,7 @@ import Support from '../components/Support'
 import AboutUs from '../components/AboutUs'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
-
+import JobProfile from '../components/JobProfile'
 const LandingPage = () => {
   return (
     <div className="flex flex-col">
@@ -37,7 +37,10 @@ const LandingPage = () => {
         </div>
       </div>
       <Hero />
+      <div className='bg-blue-500'>
       <AboutUs />
+      </div>
+      <JobProfile />
       <Support />
       <Footer />
     </div>

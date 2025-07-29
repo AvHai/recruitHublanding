@@ -3,6 +3,7 @@ import React from 'react';
 const steps = [
   {
     id: '01',
+    imgbg: '/1.png',
     title: 'Create Your Applicant Account',
     subtitle: 'GET STARTED',
     description:
@@ -13,6 +14,7 @@ const steps = [
   },
   {
     id: '02',
+    imgbg: '/2.png',
     title: 'Upload All Your Essential Documents',
     subtitle: 'UPLOAD YOUR DOCUMENTS',
     description:
@@ -23,6 +25,7 @@ const steps = [
   },
   {
     id: '03',
+    imgbg: '/3.png',
     title: 'Explore Your Matching Job Openings',
     subtitle: 'FIND SUITABLE JOBS',
     description:
@@ -31,8 +34,9 @@ const steps = [
     link: '#',
     image: '/explorejob.png',
   },
-   {
+  {
     id: '04',
+    imgbg: '/4.png',
     title: 'Apply and Track Your Job Applications',
     subtitle: 'APPLY FOR JOBS',
     description:
@@ -59,18 +63,20 @@ const Hero = () => {
             } items-center gap-10`}
           >
             {/* Text Section */}
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 relative pl-32">
               <span className="text-6xl font-bold text-gray-100 absolute -z-10">
                 {step.id}
               </span>
-              <p className="text-sm font-semibold text-blue-500 uppercase tracking-wide mb-2">
+              <img src={step.imgbg} alt="" className="absolute top-[-100px] left-0" />
+              
+              <p className="text-[18px] font-semibold text-blue-500 uppercase tracking-wide mb-2">
                 {step.subtitle}
               </p>
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+              <h3 className="text-[64px] sm:text-3xl font-bold text-gray-800 mb-4">
                 {step.title}
               </h3>
-              <p className="text-gray-600 mb-4">{step.description}</p>
-              <a href={step.link} className="text-blue-600 font-semibold hover:underline">
+              <p className="text-gray-600 text-[18px] font-normal mb-4">{step.description}</p>
+              <a href={step.link} className="text-blue-600 font-bold text-[18px] hover:underline">
                 {step.linkText} →
               </a>
             </div>
@@ -80,7 +86,7 @@ const Hero = () => {
               <img
                 src={step.image}
                 alt={step.title}
-                className="rounded-xl shadow-md w-full h-auto object-cover"
+                className="shadow-md w-[565px] h-[720px] object-cover "
               />
             </div>
           </div>
