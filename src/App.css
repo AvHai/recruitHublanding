@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+.poppins {
+    font-family: "Poppins", serif;
+  }
+
+.urbanist{
+    font-family: "Urbanist", serif;
+  }
+.montserrat {
+    font-family: "Montserrat", serif;
+  }
+
+.inter {
+    font-family: "Inter", serif;
+  }
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+body{
+  width: 100%;
+}
