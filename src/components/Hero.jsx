@@ -63,30 +63,36 @@ const Hero = () => {
             } items-center gap-10`}
           >
             {/* Text Section */}
-            <div className="lg:w-1/2 relative pl-32">
-              <span className="text-6xl font-bold text-gray-100 absolute -z-10">
-                {step.id}
-              </span>
-              <img src={step.imgbg} alt="" className="absolute top-[-100px] left-0" />
-              
-              <p className="text-[18px] font-semibold text-blue-500 uppercase tracking-wide mb-2">
+            <div className="lg:w-1/2 relative px-4 sm:px-8 lg:px-16 ">
+              <img
+                src={step.imgbg}
+                alt=""
+                className="absolute md:top-[-50px] top-[-70px] lg:top-[-100px] left-0"
+              />
+              <div className="absolute w-[72px] h-[2px] bg-blue-500 mt-3 ml-20"></div>
+              <p className="text-sm sm:text-base lg:text-lg font-semibold text-blue-500 uppercase tracking-wide mb-2 ml-42">
                 {step.subtitle}
               </p>
-              <h3 className="text-[64px] sm:text-3xl font-bold text-gray-800 mb-4">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 ml-20">
                 {step.title}
               </h3>
-              <p className="text-gray-600 text-[18px] font-normal mb-4">{step.description}</p>
-              <a href={step.link} className="text-blue-600 font-bold text-[18px] hover:underline">
-                {step.linkText} →
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 ml-20">
+                {step.description}
+              </p>
+              <a
+                href={step.link}
+                className="text-blue-600 font-bold text-sm sm:text-base lg:text-lg hover:underline ml-20"
+              >
+                {step.linkText} 
               </a>
             </div>
 
             {/* Image Section */}
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 flex justify-center">
               <img
                 src={step.image}
                 alt={step.title}
-                className="shadow-md w-[565px] h-[720px] object-cover "
+                className="shadow-md w-[300px] sm:w-[400px] lg:w-[565px] h-[400px] sm:h-[500px] lg:h-[720px] object-cover"
               />
             </div>
           </div>
